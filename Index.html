@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello there!</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./IMG/LogoGV.png" class="logo"alt="GV">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">À propos </a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span class="highlight">Je</span> <span class="input"></span></p>
+                <h1>Salut, C'est <span class="highlight"> Gabriel</span><br>Étudiant en informatique<br></h1>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+var typed = new Typed(".input",{
+    strings: [" viens de Colombie!","cherche un stage!","cherche une alternance!"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true
+})
+</script>
+
+<!-- -------------a propos ------------- -->
+
+<div id="aPropos">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="./IMG/FotoCV.png" alt="">
+            </div>
+            <div class="about-col2"> 
+                <h2 class="subtitle">À Propos</h2>
+                <p class="text">Bonjour, je suis Jose Gabriel Vasquez, un passionné par l'informatique originaire de Colombie.
+                    Je suis une personne responsable et motivée, toujours prêt aux nouveaux défis dans
+                    le monde de la technologie. Mon objectif professionnel est de devenir un développeur web full stack. 
+                    Je suis également très intéressé par le développement 
+                    de jeux vidéo, car c'est un domaine qui me passionne depuis longtemps. Mon objectif à long terme est de travailler sur le développement d'un jeu de type MMORPG. 
+                    Je suis passionné par la création d'un monde virtuel immersif et captivant, et j'ai hâte de commencer à travailler sur ce projet ambitieux.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills </p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience </p>
+                        <p class="tab-links" onclick="openTab('formation')">Formation </p>
+                    </div>
+                    <div class="content-tab active-tab" id="skills">
+                        <div class="row">
+                            <div class="col1">
+                                <ul>
+                                    <li><span class="highlight experience">Base de données :</span><br>-SQL ( 3/5 projection 3mois)</li>
+                                    <li> <span class="highlight experience">Analyse de données :</span><br>-Python  (3/5 projection 3mois)</li>
+                                    <li><span class="highlight experience">Informatique :</span><br>
+                                        - HTML  (5/5 projection 3mois)<br>
+                                        - CSS  (5/5 projection 3mois)<br>
+                                        - JavaScript (4/5 projection 3 mois )<br>
+                                        - Suite office  (3/5)</li>
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><span class="highlight experience">Qualités humaines :</span><br>-Autonomie<br>
+                                        -Organisation<br>
+                                        -Goût du challenge<br>
+                                        -Proactivité<br>
+                                        -Rigueur
+
+                                    </li>
+                                </ul>  
+                            </div>
+                        </div>
+
+                        
+                    </div> 
+                    <div class="content-tab" id="experience">
+                        <div class="row">
+                            <div class="col1">
+                                <ul>
+                                    <li><span class="highlight experience">Restaurant JOUR | 2021-2022</span><br>
+                                        Préparateur polyvalent<br>
+                                        - Préparation de commandes<br>
+                                        - Gestion de la caisse<br>
+                                        - Autonomie, Efficacité, travail en équipe</li>
+                                    <li><span class="highlight experience">Soluciona D&P | 2017-2018</span><br>
+                                        Assistant avocat<br>
+                                        - Gestion de documents (poursuites judiciaires)<br>
+                                        - Autonomie, Responsabilité, Capacité d'apprentissage</li>
+                                  
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><span class="highlight experience">Las violetas | feb 2019 - mai 2019</span><br>
+                                        Serveur en resturation <br>
+                                        - Service à table<br>
+                                        - Nettoyage du restaurant<br>
+                                        - Service client</li>
+                                </ul>  
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="content-tab" id="formation">
+                        <div class="row">
+                            <div class="col1">
+                                <ul>
+                                    <li><span class="highlight experience">Sciences U | Oct 2022 - maintenant</span><br>
+                                        BTS services informatiques aux organisations option SLAM (Solutions Logicielles et Applications Métier)</li>
+                                    <li><span class="highlight experience">OPENCLASSROOM | Juill 2022</span><br>
+                                        Think like a computer: the logic of programming</li>
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><span class="highlight experience">Université lumière Lyon 2 | 2020 - 2022  </span><br>
+                                        Licence information communication (pas fini)</li>
+                                    <li><span class="highlight experience">Université de Lorraine | 2019 - 2020  </span><br>
+                                        Français comme langue étrangère DEFLE </li>
+                                </ul>  
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var contentTab = document.getElementsByClassName("content-tab");
+    function openTab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of contentTab){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<div id="portfolio">
+    <div class="portfolio-container">
+        <h2 class="subtitle">Portfolio</h2>
+    </div>
+    <div class="soon-container">
+        <h2 class="subtitle center">Coming <span class="highlight">soon</span></h2>
+    </div>  
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact1">
+                <form action="">
+                    <label for="">Nom </label><input type="text">
+                </form>
+            </div>
+            <div class="contact2"></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
