@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,10 @@
             <nav>
                 <img src="./IMG/LogoGV.png" class="logo"alt="GV">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">À propos </a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aPropos">À propos </a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     
                 </ul>
             </nav>
@@ -63,9 +63,9 @@ var typed = new Typed(".input",{
                         <div class="row">
                             <div class="col1">
                                 <ul>
-                                    <li><span class="highlight experience">Base de données :</span><br>-SQL ( 3/5 projection 3mois)</li>
-                                    <li> <span class="highlight experience">Analyse de données :</span><br>-Python  (3/5 projection 3mois)</li>
-                                    <li><span class="highlight experience">Informatique :</span><br>
+                                    <li><span class="highlight2 experience">Base de données :</span><br>-SQL ( 3/5 projection 3mois)</li>
+                                    <li> <span class="highlight2 experience">Analyse de données :</span><br>-Python  (3/5 projection 3mois)</li>
+                                    <li><span class="highlight2 experience">Informatique :</span><br>
                                         - HTML  (5/5 projection 3mois)<br>
                                         - CSS  (5/5 projection 3mois)<br>
                                         - JavaScript (4/5 projection 3 mois )<br>
@@ -74,7 +74,7 @@ var typed = new Typed(".input",{
                             </div>
                             <div class="col2">
                                 <ul>
-                                    <li><span class="highlight experience">Qualités humaines :</span><br>-Autonomie<br>
+                                    <li><span class="highlight2 experience">Qualités humaines :</span><br>-Autonomie<br>
                                         -Organisation<br>
                                         -Goût du challenge<br>
                                         -Proactivité<br>
@@ -91,12 +91,12 @@ var typed = new Typed(".input",{
                         <div class="row">
                             <div class="col1">
                                 <ul>
-                                    <li><span class="highlight experience">Restaurant JOUR | 2021-2022</span><br>
+                                    <li><span class="highlight2 experience">Restaurant JOUR | 2021-2022</span><br>
                                         Préparateur polyvalent<br>
                                         - Préparation de commandes<br>
                                         - Gestion de la caisse<br>
                                         - Autonomie, Efficacité, travail en équipe</li>
-                                    <li><span class="highlight experience">Soluciona D&P | 2017-2018</span><br>
+                                    <li><span class="highlight2 experience">Soluciona D&P | 2017-2018</span><br>
                                         Assistant avocat<br>
                                         - Gestion de documents (poursuites judiciaires)<br>
                                         - Autonomie, Responsabilité, Capacité d'apprentissage</li>
@@ -105,7 +105,7 @@ var typed = new Typed(".input",{
                             </div>
                             <div class="col2">
                                 <ul>
-                                    <li><span class="highlight experience">Las violetas | feb 2019 - mai 2019</span><br>
+                                    <li><span class="highlight2 experience">Las violetas | feb 2019 - mai 2019</span><br>
                                         Serveur en resturation <br>
                                         - Service à table<br>
                                         - Nettoyage du restaurant<br>
@@ -120,17 +120,17 @@ var typed = new Typed(".input",{
                         <div class="row">
                             <div class="col1">
                                 <ul>
-                                    <li><span class="highlight experience">Sciences U | Oct 2022 - maintenant</span><br>
+                                    <li><span class="highlight2 experience">Sciences U | Oct 2022 - maintenant</span><br>
                                         BTS services informatiques aux organisations option SLAM (Solutions Logicielles et Applications Métier)</li>
-                                    <li><span class="highlight experience">OPENCLASSROOM | Juill 2022</span><br>
+                                    <li><span class="highlight2 experience">OPENCLASSROOM | Juill 2022</span><br>
                                         Think like a computer: the logic of programming</li>
                                 </ul>
                             </div>
                             <div class="col2">
                                 <ul>
-                                    <li><span class="highlight experience">Université lumière Lyon 2 | 2020 - 2022  </span><br>
+                                    <li><span class="highlight2 experience">Université lumière Lyon 2 | 2020 - 2022  </span><br>
                                         Licence information communication (pas fini)</li>
-                                    <li><span class="highlight experience">Université de Lorraine | 2019 - 2020  </span><br>
+                                    <li><span class="highlight2 experience">Université de Lorraine | 2019 - 2020  </span><br>
                                         Français comme langue étrangère DEFLE </li>
                                 </ul>  
                             </div>
@@ -158,41 +158,60 @@ var typed = new Typed(".input",{
         document.getElementById(tabname).classList.add("active-tab")
     }
 </script>
+
+
+<!-- --------------COMING SOON----------------------------- --> 
+       
+<!--    <div class="soon-container">
+        <h2 class="subtitle center">Coming <span class="highlight">soon</span></h2>
+        </div>  --> 
+
+<!-- -----------------PORTFLIO---------------- -->
+
 <div id="portfolio">
     <div class="portfolio-container">
         <h2 class="subtitle">Portfolio</h2>
     </div>
-    <div class="soon-container">
-        <h2 class="subtitle center">Coming <span class="highlight">soon</span></h2>
-    </div>  
-</div>
-<div id="contact">
     <div class="container">
-        <div class="row">
-            <div class="contact1">
-                <form action="">
-                    <label for="">Nom </label><input type="text">
-                </form>
+        <div class="work-list">
+            <div class="work">
+                <img src="./IMG/fotoCV2.png" alt="">
+                <div class="layer">
+                    <h2 class="subtitle">Gabriel 1</h2>
+                </div>  
             </div>
-            <div class="contact2"></div>
+            <div class="work">
+                <img src="./IMG/fotoCV2.png" alt="">
+                <div class="layer">
+                    <h2 class="subtitle">Gabriel 2</h2>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./IMG/fotoCV2.png" alt="">
+                <div class="layer">
+                    <h2 class="subtitle ">Gabriel 3</h2>
+                </div>
+            </div>      
         </div>
     </div>
+<!-- --------------------------CONTACT---------------------- -->
 </div>
+<div id="contact">
     <div class="background">
         <div class="container-form">
           <div class="screen">
             <div class="screen-body">
               <div class="screen-body-item left">
                 <div class="app-title">
-                  <span>CONTACT</span>
-                  <span>US</span>
+                  <span>RESTONS</span>
+                  <span>EN CONTACT</span>
                 </div>
-                <div class="app-contact">CONTACT INFO : +330849189268</div>
+                <div class="app-contact">CONTACTE-MOI : +330849189268</div>
               </div>
               <div class="screen-body-item">
                 <div class="app-form">
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="NAME" >
+                    <input class="app-form-control" placeholder="NOM" >
                   </div>
                   <div class="app-form-group">
                     <input class="app-form-control" placeholder="EMAIL">
@@ -211,8 +230,7 @@ var typed = new Typed(".input",{
             </div>
           </div>
         </div>
-      </div>
-
+    </div>
+</div>
 </body>
 </html>
-

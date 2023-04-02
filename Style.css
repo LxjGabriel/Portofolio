@@ -4,10 +4,19 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;    
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: #fff;
 }
+
+
+
+/* --------------------HOME------------------- */
+
+
 #header{
   width: 100%;
   height: 100vh;
@@ -71,6 +80,9 @@ nav ul li a:hover::after{
     background-image: linear-gradient(to right, #46219a, #926bf7, #46219a);
     -webkit-background-image: linear-gradient(to right, #46219a, #926bf7, #46219a);
 }
+.highlight2{
+    color: #ceb8fb;
+}
 
 /*----- a propos -----*/
 
@@ -106,7 +118,7 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
 }
-.highlight.experience{
+.experience{
     font-size: 20px;
     font-weight: 600;
 }
@@ -147,7 +159,8 @@ nav ul li a:hover::after{
 .content-tab.active-tab{
     display: block;
 }
-.soon-container{
+/* -----------COMING SOON------------------- */
+/* .soon-container{
     width: 100%;
     height: 50vh;
     display: flex;
@@ -171,13 +184,13 @@ nav ul li a:hover::after{
     animation: spin 6s alternate infinite ease-in-out;
 }
 .subtitle.center::before{
-    border-top: 15px solid #926bf7;
-    border-left: 15px solid #926bf7;
+    border-top: 15px solid #ceb8fb;
+    border-left: 15px solid #ceb8fb;
 
 }
 .subtitle.center::after{
-    border-bottom: 15px solid #926bf7;
-    border-right: 15px solid #926bf7;
+    border-bottom: 15px solid #ceb8fb;
+    border-right: 15px solid #ceb8fb;
     z-index: -1;
 }
 @keyframes spin{
@@ -185,15 +198,40 @@ nav ul li a:hover::after{
         transform: translateX(-50%) translateY(-50%) rotate(360deg);
     }
 }
+ */
+
+
+/* -----------------PORTFOLIO---------------------- */
 .portfolio-container{
     font-size: 60px;
     width: 100%;
-    height: 10vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;   
 }
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    display: block;
+}
 
+
+
+
+
+
+/* ----------------CONTACT---------------- */
 .contact1{
     flex-basis: 50%;
     margin-left: 50px;
@@ -217,7 +255,7 @@ nav ul li a:hover::after{
     background: #3e3e3e;
     border-radius: 5px;
   }
-  
+
   .screen-body {
     display: flex;
   }
@@ -236,7 +274,7 @@ nav ul li a:hover::after{
     display: flex;
     flex-direction: column;
     position: relative;
-    color: #813dbd;
+    color: #fff;
     font-size: 26px;
   }
   
@@ -248,7 +286,7 @@ nav ul li a:hover::after{
     bottom: -10px;
     width: 25px;
     height: 4px;
-    background: #813dbd;
+    background: #fff;
   }
   
   .app-contact {
@@ -289,19 +327,20 @@ nav ul li a:hover::after{
   }
   
   .app-form-control:focus {
-    border-bottom-color: #ddd;
+    border-bottom-color: #d2abf4;
   }
   
   .app-form-button {
     padding: 5px;
     background: none;
     border: none;
-    color: #813dbd;
+    color: #fff;
     font-size: 14px;
     cursor: pointer;
     outline: none;
   }
   
   .app-form-button:hover {
-    color: #813dbd;
+    color: #d2abf4;
   }
+
